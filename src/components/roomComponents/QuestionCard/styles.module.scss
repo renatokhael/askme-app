@@ -1,0 +1,63 @@
+
+.questionCard {
+    max-height: 9.5rem;
+
+    background-color: var(--white);
+    border-radius: 0.5rem;
+    box-shadow: 2px 0.3rem rgba(1,1,1,0.04);
+    
+    padding: 1.5rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    p {
+        color: var(--black1);
+        line-height: 1.5rem;
+
+        padding-bottom: 1rem;
+    }
+    
+    footer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    footer button {
+        font-size: 0;
+        border: 0;
+        background-color: transparent;
+
+        &:hover {
+            filter: brightness(0.9);
+        }
+    }
+
+    footer button:nth-child(2),
+    footer button[name=like-button] {
+        transform: translateY(0.3rem);
+    }
+
+    footer button + button {
+        margin-left: 1rem;
+    }
+
+    footer span {
+        margin-right: 1rem;
+
+        font: 400 1rem 'Poppins';
+        color: var(--gray3)
+    }
+}
+
+.isHighlighted {
+    border: 1px solid var(--purple1);
+    background-color: rgba(131, 90, 253, 0.1);
+}
+
+.wasAnswered {
+    border: 0;
+    background-color: rgb(219, 220, 221);//rgba(115, 115, 128, 0.1);
+    box-shadow: none;
+}

@@ -1,0 +1,76 @@
+
+.container {
+    width: 100%;
+    height: var(--header-height);
+
+    background-color: var(--gray1);
+    border-bottom: 1px solid var(--gray4);
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    a {
+        cursor: pointer;
+    }
+
+    & > div {
+        display: flex;
+    }
+
+    button {
+        height: 2.5rem;
+
+        background-color: transparent;
+
+        border: 1px solid var(--purple1);
+        border-radius: 0.5rem;
+    }
+
+    button[name=room] {
+        min-width: 9.9375rem;
+        width: fit-content;
+
+        position: relative;
+
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        padding: 0 1rem 0 3.3rem;
+
+        overflow: hidden;
+    }
+
+    button[name=room] div {
+        padding: 0 0.75rem;
+        //width: 2.75rem;
+        //height: 2.5rem;
+
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-color: var(--purple1);
+
+        //border-radius: 0.5rem 0 0 0.5rem;
+    }
+
+    button[name=close] {
+        width: 8.1875rem;
+
+        color: var(--purple1);
+
+        margin-left: 0.5625rem;
+
+        &:hover {
+            filter: brightness(0.9);
+            background-color: rgba(1,1,1,0.04);
+        }
+    }
+}
