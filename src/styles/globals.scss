@@ -1,0 +1,64 @@
+
+:root {
+  --header-height: 5.5625rem;
+
+  --white: #FFF;
+  --black1: #29292E;
+  --purple1: #835AFD;
+  --purple2: #6F4BD8;
+  --purple3: #E559F9;
+  --gray1: #F8F8F8;
+  --gray2: #A8A8B3;
+  --gray3: #737380;
+  --gray4: #E2E2E2;
+  --gray5: #DBDCDD;
+  --red1: #EA4335;
+  --red2: #E73F5D;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+@media(max-width: 1080px){
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media (max-width: 720px){
+  html {
+      font-size: 87.5%;
+  }
+}
+
+body {
+  background: var(--gray1);
+}
+
+body, input, textarea, button {
+  font: 400 1rem 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+button {
+  cursor: pointer;
+}
